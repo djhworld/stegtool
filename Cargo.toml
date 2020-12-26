@@ -1,0 +1,13 @@
+[package]
+name = "stegtool"
+version = "0.1.0"
+authors = ["djhworld"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+steg = { path = "../steg" }
+clap = "3.0.0-beta.2"
+log = "0.4.11"
+flexi_logger = "0.16.2"
