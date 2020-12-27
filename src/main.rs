@@ -118,7 +118,7 @@ fn run(matches: ArgMatches) -> Result<(), std::io::Error> {
                 Some("four-bits") => steg::ByteSplitGranularity::FourBits,
                 Some("two-bits") => steg::ByteSplitGranularity::TwoBits,
                 Some("lsb") => steg::ByteSplitGranularity::OneBit,
-                _ => panic!("unsupported grandularity!"),
+                _ => panic!("unsupported granularity!"),
             };
 
             let encoder = Encoder::new(compress, byte_split_level);
